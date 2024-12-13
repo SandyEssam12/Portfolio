@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shippori+Mincho&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+}
+
+.logo {
+    text-decoration: none;
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-weight: 750;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 25px;
+    position: relative; 
+}
+
+.navigation a:hover {
+    border-bottom: 1.5px solid rgb(19, 19, 231);
+    padding-bottom: 5px;
+    
+}
+
+
+section {
+    padding: 100px 200px;
+    scroll-margin-top: 50px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 150px;
+    align-items: center;
+    background: url(media/background2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h1 {
+    color: black;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.main span {
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 550;
+}
+
+.main h3 {
+    color: black;
+    font-size: 2.5em;
+    font-weight: 650;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.social a {
+    color: white;
+    font-size: 1.5em;
+    padding-right: 30px;
+}
+
+
+.cards {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgb(19, 19, 231);
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card {
+    background-color: white;
+    width: 20.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 15px;
+    transition: 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    text-align: center;
+    color: black;
+    font-size: 5em;
+    border-radius: 50%;
+}
+
+.info h3 {
+    color: rgb(19, 19, 231);
+    font-size: 1.2em;
+    font-weight: 800;
+    margin: 10px;
+    text-align: center;
+}
+
+.profile .pro_skils .about {
+    width: 90%;
+    padding: 60%;
+    margin: 0;
+}
+
+.progress-bar {
+    width: 100%;
+}
+
+.procard {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 80em;
+    height: auto;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 50px;
+    margin: 20px;
+    align-items: center;
+    gap: 30px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    height: 100px;
+    margin-bottom: 80px;
+}
+
+.profile .img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile .info {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.pro_skils {
+    background-color: #f4f4f4;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pro_skils h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skill {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    margin-left: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgb(19, 19, 231);
+}
+
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%) translateX(10px);
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.about {
+    flex: 1;
+    padding: 40px 10px 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+}
+
+.about h2 {
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 0.5px solid rgb(19, 19, 231);
+    padding-bottom: 10px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+.con {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+.contact_card {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.cardForm {
+    flex: 1;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cardForm h2 {
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid rgb(19, 19, 231);
+    padding-bottom: 10px;
+    
+}
+
+.cardForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.cardForm label {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cardForm input .cardForm textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.cardForm button {
+    padding: 10px;
+    background-color: rgb(19, 19, 231);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.8em;
+}
+
+.cardForm button:hover {
+    background-color: rgb(19, 50, 231);
+}
+
+.cardView {
+    flex: 1;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.cardView h2 {
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid rgb(19, 19, 231);
+    padding-bottom: 10px;
+}
+
+.cardView .us {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.cardView .us i {
+    font-size: 1.8em;
+    margin-right: 15px;
+    color: #333;
+}
+
+.cardView .us .name {
+    font-size: 1.2em;
+    color: #333;
+}
+.soc a {
+    color: #333;
+    font-size: 2em;
+    padding-right: 20px;
+}
+
+    
+.cer {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.cer h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(19, 19, 231);
+    margin-bottom: 50px;
+}
+
+.all {
+    display: flex;
+    flex-direction: row; /* ترتيب العناصر عموديًا */
+    align-items: center; /* محاذاة العناصر في الوسط */
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.ct {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%; /* تعيين عرض كل بطاقة لتكون نسبة مئوية من العرض */
+    max-width: 350px; /* تعيين الحد الأقصى للعرض */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ct:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.ct img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.ct p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 5px 0;
+}
+
